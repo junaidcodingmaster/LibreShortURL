@@ -10,7 +10,7 @@
   </style>
 </head>
 <body class="light-theme">
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <button id="theme-bnt" class="theme-toggle" onclick="toggleTheme()">Switch to Dark Mode</button>
   <h1>LibreShortURL</h1>
   <div class="form-container">
     <form id="urlForm" onsubmit="return handleSubmit(event)">
@@ -21,5 +21,8 @@
     </form>
     <div class="notification" id="notification"></div>
   </div>
+  <footer>
+    <p>Made with ❤️ by <a href="https://abujuni.dev" target="_blank">Junaid</a></p>
+  </footer>
 </body>
 </html>

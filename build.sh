@@ -20,9 +20,3 @@ echo "[+] Requirements installed!"
 echo "[=] Running setup script..."
 ./venv/bin/python setup.py
 echo "[+] Setup completed!"
-
-echo
-echo "To activate manually:"
-echo "  source ./venv/bin/activate"
-echo "  python app.py"
-echo

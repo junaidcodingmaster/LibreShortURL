@@ -1,7 +1,31 @@
-function toggleTheme() {
-  document.body.classList.toggle("dark-theme");
-  document.body.classList.toggle("light-theme");
+function setDarkTheme(enabled) {
+  document.cookie = "darktheme=" + enabled + "; path=/";
+  document.body.className = enabled ? "dark-theme" : "light-theme";
+
+  const btn = document.getElementById("theme-bnt");
+  if (btn) {
+    btn.textContent = enabled ? "Switch to Light Mode" : "Switch to Dark Mode";
+  }
 }
+
+function getDarkTheme() {
+  return document.cookie.includes("darktheme=true");
+}
+
+function toggleTheme() {
+  const isDark = getDarkTheme();
+  setDarkTheme(!isDark);
+}
+
+window.onload = function () {
+  const isDark = getDarkTheme();
+  setDarkTheme(isDark);
+
+  const btn = document.getElementById("theme-bnt");
+  if (btn) {
+    btn.onclick = toggleTheme;
+  }
+};
 
 async function handleSubmit(event) {
   event.preventDefault();
