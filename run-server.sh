@@ -10,11 +10,11 @@ echo
 echo " ~ Junaid[abujuni.dev]"
 
 echo "[=] Installing requirements..."
-./venv/bin/pip install -r requirements.txt
+pip install -r requirements.txt
 echo "[+] Requirements installed!"
 
 echo "[=] Running setup script..."
-./venv/bin/python setup.py
+python setup.py
 echo "[+] Setup completed!"
 
 echo "[=] Starting the server..."
