@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    width: 300px;
+  }
+  input[type="url"], input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  .notification {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+  }
+  .availability {
+    margin-top: 5px;
+    font-size: 0.9em;
+  }
+  .available {
+    color: green;
+  }
+  .unavailable {
+    color: red;
+  }
+  .light-theme {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  .light-theme .form-container {
+    background: white;
+  }
+  .dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  .dark-theme .form-container {
+    background: #444;
+  }
+  .theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+  }
+  .theme-toggle:hover {
+    background-color: #2d86e6;
+  }
+  a{
+    color: #2596ec;
+  }
+  a:hover{
+    font-weight: bold;
+  }

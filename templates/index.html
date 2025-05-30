@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LibreShortURL</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="index.js"></script>
+  <style>
+  </style>
+</head>
+<body class="light-theme">
+  <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+  <h1>LibreShortURL</h1>
+  <div class="form-container">
+    <form id="urlForm" onsubmit="return handleSubmit(event)">
+      <input type="url" name="url" id="url" placeholder="Enter URL" required />
+      <input type="text" name="name" id="name" placeholder="Enter Short Name (optional)" onchange="checkNameAvailability()" />
+      <div id="availability" class="availability"></div>
+      <input type="submit" value="Shorten" />
+    </form>
+    <div class="notification" id="notification"></div>
+  </div>
+</body>
+</html>
