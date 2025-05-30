@@ -165,9 +165,9 @@ def rejection(name):
     data = db.query_data(conn=conn, query_sql="SELECT * FROM LibreShortUrlsDB")
 
     if name == "index.js":
-        return send_file("./templates/index.js")
+        return send_file("./templates/index.js"),200
     elif name == "styles.css":
-        return send_file("./templates/styles.css")
+        return send_file("./templates/styles.css"),200
 
     for _, url, registered_name in data:
         if name == registered_name:

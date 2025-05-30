@@ -7,7 +7,7 @@ LibreShortURL provides a lightweight and privacy-friendly way to generate and ma
 ## Base URL
 
 ```plaintext
-http://<your-domain>/
+https://<your-domain>/
 ```
 
 > ⚠️ Replace `<your-domain>` with your server domain as configured in `config.env`.
@@ -45,7 +45,7 @@ Content-Type: application/json
 ```json
 {
   "message": "URL successfully Created and hosted.",
-  "url": "http://yourdomain/mycustomalias"
+  "url": "https://yourdomain/mycustomalias"
 }
 ```
 
