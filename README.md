@@ -44,8 +44,8 @@ More in [`docs/config.md`](docs/config.md)
 ## 🚀 Installation
 Clone Repo:
 ```
-git clone 
-cd 
+git clone https://github.com/junaidcodingmaster/LibreShortURL
+cd LibreShortURL
 ```
 
 Automatic:
