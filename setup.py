@@ -2,19 +2,6 @@ import os
 import shutil
 from sql_db import SQL_DB
 
-config = """
-SERVER_DOMAIN=""
-SERVER_HOST=localhost
-SERVER_PORT=5000
-
-REQ_LIMIT_PER_DAY=50
-
-CUSTOM_DB=false
-CUSTOM_URL_BLACKLIST_DB=false
-DB_PATH=""
-URL_BLACKLIST_PATH=""
-"""
-
 banner = r""" 
   _        _   _                      _____   _                      _     _    _   _____    _      
  | |      (_) | |                    / ____| | |                    | |   | |  | | |  __ \  | |     
@@ -27,15 +14,6 @@ banner = r"""
 """
 print(banner)
 print("")
-
-if os.path.exists("./config.env"):
-    print("Config File  -   ✅")
-else:
-    print("Config File  -   ❌")
-    print(" - Creating New config File...")
-    with open("./config.env", "w") as f:
-        f.write(config)
-        print(" - OK!")
 
 print("Setting up DB...")
 print("LOGS", "##" * 5)
