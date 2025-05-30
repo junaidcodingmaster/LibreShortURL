@@ -9,23 +9,10 @@ echo "  |______| |_| |_.__/  |_|     \___| |_____/  |_| |_|  \___/  |_|     \__|
 echo  
 echo " ~ Junaid[abujuni.dev]"
 
-echo "[=] Setting up virtual environment..."
-python3 -m venv venv
-echo "[+] Virtual environment created at './venv'"
-
 echo "[=] Installing requirements..."
-./venv/bin/pip install -r requirements.txt
+pip install -r requirements.txt
 echo "[+] Requirements installed!"
 
 echo "[=] Running setup script..."
-./venv/bin/python setup.py
+python setup.py
 echo "[+] Setup completed!"
-
-echo
-echo "To activate manually:"
-echo "  source ./venv/bin/activate"
-echo "  python app.py"
-echo
-
-echo "[=] Starting the server..."
-./venv/bin/python app.py

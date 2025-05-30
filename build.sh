@@ -9,13 +9,20 @@ echo "  |______| |_| |_.__/  |_|     \___| |_____/  |_| |_|  \___/  |_|     \__|
 echo  
 echo " ~ Junaid[abujuni.dev]"
 
+echo "[=] Setting up virtual environment..."
+python3 -m venv venv
+echo "[+] Virtual environment created at './venv'"
+
 echo "[=] Installing requirements..."
-pip install -r requirements.txt
+./venv/bin/pip install -r requirements.txt
 echo "[+] Requirements installed!"
 
 echo "[=] Running setup script..."
-python setup.py
+./venv/bin/python setup.py
 echo "[+] Setup completed!"
 
-echo "[=] Starting the server..."
-flask run --host "0.0.0.0" --port 80
+echo
+echo "To activate manually:"
+echo "  source ./venv/bin/activate"
+echo "  python app.py"
+echo
