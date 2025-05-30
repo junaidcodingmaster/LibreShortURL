@@ -166,3 +166,4 @@ Blocked or suspicious short names are rejected based on terms in:
 - All names must be **< 18 characters**
 - Short name must **not** match any blacklisted word
 - URL status is validated before redirecting
+- Add server Domain with `http://` or `https://` 
